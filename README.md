@@ -31,3 +31,4 @@ void loop(){
   //do other stuff here
 }
 ```
+after asking for the expiry of the timer, it has to be restarted.
