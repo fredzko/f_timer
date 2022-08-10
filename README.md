@@ -21,12 +21,13 @@ the timer then has to be started, eg. at the end of the setup:
 `ledTimer.startNow()`
 
 if we have a `bool ledState` that we want to toggle every 1000ms to turn the built in LED on and off at 0,5Hz, we can use the timer inside the loop:
-
-`void loop(){
+```
+void loop(){
   if(ledTimer.isExpired()){
     ledState = !ledState;
     digitalWrite(LED_BUILTIN, ledState);
     ledTimer.startNow();
   }
   //do other stuff here
-}`
+}
+```
