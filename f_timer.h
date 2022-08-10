@@ -1,6 +1,3 @@
-#pragma once
-#include "main.h"
-
 class ftimer{
 private:
     unsigned long int starttime;
