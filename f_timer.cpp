@@ -15,6 +15,11 @@ ftimer::ftimer(){
     duration = 0;
     active = false;
 }
+ftimer::ftimer(unsigned long int t){
+    starttime = 0;
+    duration = t;
+    active = false;
+}
 void ftimer::setDuration(unsigned long int td){
     duration = td;
 }
